@@ -1,0 +1,37 @@
+2019-06-14 16:37:11.607  INFO 28112 --- [main] c.c.p.merchant.MerchantApplication       : Starting MerchantApplication on Steven with PID 28112 (C:\Users\CCY\Desktop\merchant\target\classes started by RZH in C:\Users\CCY\Desktop\merchant)
+2019-06-14 16:37:11.627  INFO 28112 --- [main] c.c.p.merchant.MerchantApplication       : No active profile set, falling back to default profiles: default
+2019-06-14 16:37:11.735  INFO 28112 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a69b07: startup date [Fri Jun 14 16:37:11 CST 2019]; root of context hierarchy
+2019-06-14 16:37:15.993  INFO 28112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$1e82239d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-14 16:37:17.108  INFO 28112 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9527 (http)
+2019-06-14 16:37:17.154  INFO 28112 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-06-14 16:37:17.159  INFO 28112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2019-06-14 16:37:18.043  INFO 28112 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-14 16:37:18.044  INFO 28112 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6310 ms
+2019-06-14 16:37:19.234  INFO 28112 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-06-14 16:37:19.243  INFO 28112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-14 16:37:19.244  INFO 28112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-14 16:37:19.245  INFO 28112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-14 16:37:19.245  INFO 28112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-14 16:37:21.126  INFO 28112 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-06-14 16:37:21.162  INFO 28112 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-06-14 16:37:21.380  INFO 28112 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-06-14 16:37:21.384  INFO 28112 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-06-14 16:37:21.386  INFO 28112 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-06-14 16:37:21.575  INFO 28112 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-06-14 16:37:22.037  INFO 28112 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-14 16:37:23.721  INFO 28112 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-14 16:37:25.715  INFO 28112 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a69b07: startup date [Fri Jun 14 16:37:11 CST 2019]; root of context hierarchy
+2019-06-14 16:37:25.900  INFO 28112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/merchants/{id}],methods=[GET]}" onto public com.ccy.passbook.merchant.vo.Response com.ccy.passbook.merchant.controller.MerchantsCtl.buildMerchantsInfo(java.lang.Integer)
+2019-06-14 16:37:25.902  INFO 28112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/merchants/create],methods=[POST]}" onto public com.ccy.passbook.merchant.vo.Response com.ccy.passbook.merchant.controller.MerchantsCtl.createMerchants(com.ccy.passbook.merchant.vo.CreateMerchantsRequest)
+2019-06-14 16:37:25.903  INFO 28112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/merchants/drop],methods=[POST]}" onto public com.ccy.passbook.merchant.vo.Response com.ccy.passbook.merchant.controller.MerchantsCtl.dropPassTemplate(com.ccy.passbook.merchant.vo.PassTemplate)
+2019-06-14 16:37:25.906  INFO 28112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-14 16:37:25.906  INFO 28112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-14 16:37:26.060  INFO 28112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-14 16:37:26.061  INFO 28112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-14 16:37:26.154  INFO 28112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-14 16:37:27.026  INFO 28112 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-14 16:37:27.089  INFO 28112 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-14 16:37:27.250  INFO 28112 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9527 (http)
+2019-06-14 16:37:27.259  INFO 28112 --- [main] c.c.p.merchant.MerchantApplication       : Started MerchantApplication in 16.793 seconds (JVM running for 20.873)
